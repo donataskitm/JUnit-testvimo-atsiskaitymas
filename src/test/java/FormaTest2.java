@@ -16,7 +16,7 @@ public class FormaTest2 {
     @Order(1)
     public void getResults(){
         //pirmas parametres expected, antras - actual
-        Forma1.insert(738);
+        Forma1.insert(499);
         Assert.assertEquals("Įrašas ištrintas sėkmingai", Forma1.getResults());
     }
 
