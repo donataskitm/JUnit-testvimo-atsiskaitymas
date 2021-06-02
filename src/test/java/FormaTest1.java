@@ -4,7 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.jupiter.api.Order;
 
-public class FormaTest {
+public class FormaTest1 {
 
     @Before//veiksmai pries kiekvien testa
     public void setup(){
@@ -21,8 +21,8 @@ public class FormaTest {
     @Order(1)
     public void getResults(){
         //pirmas parametres expected, antras - actual
-       Forma.insert("zoro1", "nuotykiu", "geras aktorius", "garsus rezisierius", 100);
-        Assert.assertEquals("Duomenys įrašyti sėkmingai", Forma.getResults());
+        Forma.insert("", "nuotykiu", "geras aktorius", "garsus rezisierius", 100);
+        Assert.assertEquals("Duomenų įvedimo klaida", Forma.getResults());
     }
 
     @After
